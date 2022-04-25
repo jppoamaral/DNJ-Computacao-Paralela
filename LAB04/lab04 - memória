@@ -1,1 +1,17 @@
+//Domingos Soares do Carmo Neto - 32032889
+//João Pedro de Paula - 32049390
+//Nicolas de Barros - 32070837
 
+#include <stdlib.h>
+#include <stdio.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <sys/shm.h>
+#include <unistd.h>
+
+#define chave 32032889
+
+int main() 
+{
+  
+}
