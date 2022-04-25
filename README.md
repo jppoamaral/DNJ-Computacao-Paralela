@@ -1,5 +1,5 @@
 # DNJ-Computacao-Paralela
 
+## Domingos Soares do Carmo Neto
 ## Nicolas de Barros
-## Domingos Neto
 ## João Pedro de Paula
