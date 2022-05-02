@@ -1,3 +1,7 @@
+//Domingos Soares do Carmo Neto - 32032889
+//Joao Pedro de Paula Oliveira do Amaral - 32049390
+//Nicolas de Barros - 32070837
+
 let soma = 0 
 let i = 1
 
