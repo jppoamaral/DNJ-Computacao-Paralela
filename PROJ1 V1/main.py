@@ -2,21 +2,32 @@
 #Nicolas de Barros - 32070837
 #Joao Pedro de Paula Oliveira do Amaral - 32049390
 
-import threading
-import time
+import concurrent.futures
 
-def taylor(T):
-  soma = 0
-  for i in range(T):
-      if i == 0:
-        pass
-      else:
-        soma += 1/i
-  print("Serie de Taylor paralelizada para T = {}: {}".format(T-1, soma))
+def taylor(x):
+    array = []
+    soma = 0
+    soma2 = 0
+    total = 0
+    if x == 0:
+      for i in range(51):
+        if i == 0:
+          pass
+        else:
+          soma += 1/i
+    elif x == 1:
+        for j in range(51, 101):
+          soma2 += 1/j
+    total = soma + soma2
+    return total
 
 
-start = time.time()
-thread = threading.Thread(target = taylor, args =(101,))
-thread.start()
-end = time.time()
-print("Speedup versao paralela: {}".format(end - start))
+with concurrent.futures.ThreadPoolExecutor(2) as executor: #A declaração with é usada para criar um executor de instância do ThreadPoolExecutor que irá esvaziar os threads imediatamente após a conclusão.
+    futures = []
+    for x in range(2):
+        futures.append(executor.submit(taylor, x))#Cada chamada a submit retorna uma instância Future que está armazenada na lista futures.
+    somaArr = []
+    for future in concurrent.futures.as_completed(futures): #Espera cada chamada da função ser concluída para poder imprimir o resultado.
+        somaArr.append(future.result())
+    sum = somaArr[0] + somaArr[1]
+    print(sum)
