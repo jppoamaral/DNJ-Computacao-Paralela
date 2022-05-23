@@ -21,7 +21,7 @@ def taylor(x):
     return total
 
 
-with concurrent.futures.ThreadPoolExecutor(3) as executor: #A declaração with é usada para criar um executor de instância do ThreadPoolExecutor que irá esvaziar os threads imediatamente após a conclusão.
+with concurrent.futures.ProcessPoolExecutor(3) as executor: #A declaração with é usada para criar um executor de instância do ThreadPoolExecutor que irá esvaziar os threads imediatamente após a conclusão.
     futures = []
     for x in range(3):
         futures.append(executor.submit(taylor, x))#Cada chamada a submit retorna uma instância Future que está armazenada na lista futures.
