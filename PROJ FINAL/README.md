@@ -14,7 +14,7 @@ Tempo de execução paralelo com 3 threads (T = 10^9) : 19,49 segundos
 Tempo de execução paralelo com 4 threads (T = 10^9) :  13,99 segundos
 
 ![image](https://user-images.githubusercontent.com/84483063/170840933-951f0e39-29bd-4297-981d-c69774c461b5.png)
-------------------------------------------------------------------------------------------------------------------------
+__________________________________________________________________________________________________________________
 Tempo de execução serial (para T = 10^10) : 796,76 segundos
 
 ![image](https://user-images.githubusercontent.com/84483063/170841352-b4100953-3596-414a-a400-da6b0a7b98db.png)
