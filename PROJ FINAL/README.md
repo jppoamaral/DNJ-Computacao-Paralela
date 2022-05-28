@@ -1,5 +1,5 @@
 # Como resolveram o problema: descrição simples do algoritmo e estratégia de paralelismo adotada
-Usamos a linguagem Python para resolver o desafio. Primeiramente tentamos implementar threads, porém descobrimos que não existe na linguagem python. Sendo assim, importamos a biblioteca "concurrent.futures". Dessa biblioteca usamos a classe "ProcessPoolExecutor" e a função "as_completed". 
+Usamos a linguagem Python para resolver o desafio. Primeiramente tentamos implementar pthreads, porém descobrimos que não existe na linguagem python. Sendo assim, importamos a biblioteca "concurrent.futures". Dessa biblioteca usamos a classe "ProcessPoolExecutor" e a função "as_completed".
 
 
 # Qual foi o speedup da última versão e como eles fizeram para melhorar
