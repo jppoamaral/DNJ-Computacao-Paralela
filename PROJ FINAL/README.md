@@ -1,5 +1,5 @@
 # Como resolveram o problema: descrição simples do algoritmo e estratégia de paralelismo adotada
-Usamos a linguagem Python para resolver o desafio. Primeiramente tentamos implementar threads, porém descobrimos que não existe na linguagem python. Sendo assim, importamos a biblioteca "concurrent.futures". Dessa biblioteca usamos a classe "ProcessPoolExecutor" e a função "as_completed". Primeiramente rodamos o código para com 3 threads e depois com 4 threads para analisar a melhora no tempo de execução. Testamos tanto para T = 10^9 quanto para T = 10^10.
+Usamos a linguagem Python para resolver o desafio. Primeiramente tentamos implementar threads, porém descobrimos que não existe na linguagem python. Sendo assim, importamos a biblioteca "concurrent.futures". Dessa biblioteca usamos a classe "ProcessPoolExecutor" e a função "as_completed". 
 
 
 # Qual foi o speedup da última versão e como eles fizeram para melhorar
