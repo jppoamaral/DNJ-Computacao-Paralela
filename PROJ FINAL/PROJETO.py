@@ -4,7 +4,7 @@
 import concurrent.futures
 
 def taylor(x):
-  t = 100000000
+  t = 10000000000
   t2 = t/2
   t4 = t/4
   ts = t2 + t4
