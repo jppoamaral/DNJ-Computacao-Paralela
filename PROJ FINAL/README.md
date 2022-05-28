@@ -31,4 +31,4 @@ Tempo de execução paralelo com 4 threads (T = 10^10) : 236,06 segundos
 ____________________________________________________________________________________________________________________
 
 # Considerações sobre a estratégia de paralelismo adotada e como isso auxiliou na escala do problema. 
-
+Primeiramente rodamos o código para com 3 threads e depois com 4 threads para analisar a melhora no tempo de execução. Testamos tanto para T = 10^9 quanto para T = 10^10.
