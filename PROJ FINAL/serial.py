@@ -1,3 +1,6 @@
+#Domingos Soares do Carmo Neto - TIA: 32032889
+#Joao Pedro de Paula Oliveira do Amaral - TIA: 32049390
+#Nicolas de Barros - TIA: 32070837
 def taylor():
     T = 1000000000
     soma = 0
