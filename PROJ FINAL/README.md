@@ -27,5 +27,8 @@ Tempo de execução paralelo com 4 threads (T = 10^10) : 236,06 segundos
 
 ![image](https://user-images.githubusercontent.com/84483063/170841858-688ddd4c-a169-4bcc-b7bc-dbb4a954a5dc.png)
 
+### Speedup: 796,76 / 236,06 = 3,375
+
+
 # Considerações sobre a estratégia de paralelismo adotada e como isso auxiliou na escala do problema. 
 
