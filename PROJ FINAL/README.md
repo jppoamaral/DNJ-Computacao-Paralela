@@ -1,3 +1,6 @@
+# Como compilar:
+O código foi compilado pelo Visual Studio Code no Windows. Para calcular o tempo de execução, executamos o segunte código "Measure-Command {python .\PROJETO.py}" no Windows PowerShell.
+
 # Como resolveram o problema: descrição simples do algoritmo e estratégia de paralelismo adotada
 Usamos a linguagem Python para resolver o desafio. Primeiramente tentamos implementar pthreads, porém descobrimos que não existe na linguagem python. Sendo assim, importamos a biblioteca "concurrent.futures". Dessa biblioteca usamos a classe "ProcessPoolExecutor" e a função "as_completed".
 
